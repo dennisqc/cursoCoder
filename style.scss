@@ -1,0 +1,117 @@
+
+
+.title {
+    text-align: left;
+    font-size: 40px;
+  }
+  ul {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 15px;
+    li {
+        list-style: none;
+        padding-inline: 50px;
+        a {
+            text-decoration: none;
+            color: #000000;
+            display: inline-block;
+            padding: 10px;
+            border: inset 1px rgb(235, 117, 8);
+            border-radius: 15px;
+          }
+      }
+  }
+  
+  li {
+    list-style: none;
+    padding-inline: 50px;
+  }
+  li > a {
+    text-decoration: none;
+    color: #000000;
+    display: inline-block;
+    padding: 10px;
+    border: inset 1px rgb(235, 117, 8);
+    border-radius: 15px;
+  }
+  .grid > * {
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .header {
+    grid-area: header;
+  }
+  
+  .navbar {
+    grid-area: navbar;
+  }
+  .oferta {
+    grid-area: oferta;
+  }
+  .body {
+    grid-area: body;
+  }
+  
+  .footer {
+    grid-area: footer;
+    text-align: left;
+    padding-left: 8vh;
+  }
+  
+  .grid {
+    display: grid;
+    gap: 1px;
+    grid-template:
+      "header" "navbar" auto
+      "oferta" auto
+      "body" auto
+      "footer" auto;
+  }
+  
+  .body h2 {
+    text-align: center;
+    font-size: 50px;
+  }
+  .equipos {
+    display: inline-block;
+    border: 2px;
+    padding: 12px;
+  }
+  
+  .equipos img {
+    width: 300px;
+    height: auto;
+    border: solid 1px;
+    border-radius: 5px;
+  }
+  
+  .oferta img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+  
+  footer > h3 {
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+  }
+  
+  @media (max-width: 600px) {
+      .grid > * {
+                 border-radius: 4px;
+          padding: 1px;
+          text-align: center;
+        }
+  
+    .grid {
+      grid-template:
+        "header" auto
+        "navbar" "body" auto
+        "footer" auto;
+    }
+  }
+  

@@ -1,34 +1,46 @@
 
-ul {
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+.header_nav_lista{
   display: flex;
   justify-content: space-evenly;
-  padding-bottom: 15px;
+  list-style: none;
+
+}
+
+.header_nav_lista li{
+  padding: 0px 10px;
+ }
+
+.header_nav{
+  display: flex;
+  justify-content: space-between;
 }
 .oferta img {
   height: 100%;
   width: 100%;
   object-fit: contain;
 }
+.header_title{
+  display: inline-block;
+}
 
-li {
-  list-style: none;
-}
-*{
-  margin: 0px;
-  padding: 0px;
-}
+
 .body{
   display: flex;
   justify-content:space-between;
   flex-wrap: wrap;
   align-content: baseline;
-  padding: 0px 100px auto 100px;
+  padding: 0px 25px;
 
 }
 
 .equipos{
  /* background-color: aqua;*/
-  padding: 20px 0px;
+  padding: 30px 10px;
   
 }
 
@@ -48,6 +60,7 @@ li {
 }
 
 .header {
+ 
   grid-area: header;
 }
 .titulo {
@@ -62,6 +75,13 @@ li {
 }
 .body {
   grid-area: body;
+}
+.oferta{
+  grid-area: oferta;
+}
+
+.footer{
+  grid-area: footer;
 }
 .grid {
   display: grid;
@@ -100,12 +120,17 @@ footer > h3 {
       text-align: center;
     }
 
+    .header_nav_lista{
+      flex-direction: column;
+    }
+
+
 .grid {
   grid-template:
-    "header"  auto
-    "barra" auto
-    "titulo"  auto
-    "body" auto
-    "footer" auto;
+    "header" 
+    "barra"
+    "titulo"  
+    "body" 
+    "footer" 
 }
 }

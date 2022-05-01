@@ -6,73 +6,76 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="../style.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
   <title>Tienda</title>
 </head>
 
 <body>
-  <header>
-    <h3 class="title">Shop</h3>
-    <nav>
-      <ul>
-        <li><a class="btn btn-warning"  href="../index.html">Home</a></li>
-        <li><a class="btn btn-warning"  href="../page/catalogo.html">Catalogo</a></li>
-        <li><a class="btn btn-warning"  href="../page/ubicacion.html">Ubicacion</a></li>
-        <li><a class="btn btn-warning"   href="../page/contacto.html">Contacto</a></li>
+  <header class="header">
+    <nav class="header_nav">
+      <h3 class="header_title">Shop</h3>
+      <ul class="header_nav_lista">
+        <li><a class="btn btn-warning" href="../index.html">Home</a></li>
+        <li><a class="btn btn-warning" href="../page/catalogo.html">Catalogo</a></li>
+        <li><a class="btn btn-warning" href="../page/ubicacion.html">Ubicacion</a></li>
+        <li><a class="btn btn-warning" href="../page/contacto.html">Contacto</a></li>
         <li><a class="btn btn-warning" href="../page/servicios.html">Servicios</a></li>
       </ul>
     </nav>
   </header>
 
-  
-    <section class="oferta">
-      <img src="../img/promociones.jpg" alt="promociones pcs" />
-    </section>
-    <h2>Dejamos tu contacto</h2>
-    <section>
-      <form action="" class="contacto">
-        <div></div>
-        <label for="">Nombres y apellidos:</label>
-        <input type="text" placeholder="Nombres y apellidos" /><br />
-        </div>
-        <div>
-          <label for="email">Correo electronico:</label>
-          <input type="email" placeholder="Ingresa tu correo" name="email" />
-        </div>
-        <div>
+
+  <section class="oferta">
+    <img src="../img/promociones.jpg" alt="promociones pcs" />
+  </section>
+  <h2>Dejamos tu contacto</h2>
+  <section>
+    <form action="" class="contacto">
+      <div></div>
+      <label for="">Nombres y apellidos:</label>
+      <input type="text" placeholder="Nombres y apellidos" /><br />
+      </div>
+      <div>
+        <label for="email">Correo electronico:</label>
+        <input type="email" placeholder="Ingresa tu correo" name="email" />
+      </div>
+      <div>
         <label for="Solicitud">
           Solicitud:</label>
-          <textarea placeholder="Descripcion"></textarea>
-        </div>
-        <div></div>
-        <label for="">Edad: </label>
-        <input type="number" placeholder="Edad" />
+        <textarea placeholder="Descripcion"></textarea>
       </div>
+      <div></div>
+      <label for="">Edad: </label>
+      <input type="number" placeholder="Edad" />
+      </div>
+      <div>
+        <h4>Cual es tu solicitud</h4>
         <div>
-          <h4>Cual es tu solicitud</h4>
-          <div>
-            Equipo completo
-            <input type="radio" name="lado" value="Equipo" />
-          </div>
-          <div>
-            Accesorio
-            <input type="radio" name="lado" value="accesorio" />
-          </div>
+          Equipo completo
+          <input type="radio" name="lado" value="Equipo" />
         </div>
-
         <div>
-          Quieres que se te envie por devilvery?
-          <input type="checkbox" name="acepta" value="1" /><label for="">Si</label>
-          <input type="checkbox" name="acepta" value="1" /><label for="">No</label>
+          Accesorio
+          <input type="radio" name="lado" value="accesorio" />
         </div>
+      </div>
 
-        <input class="enviar" type="submit" value="Enviar">
+      <div>
+        Quieres que se te envie por devilvery?
+        <input type="checkbox" name="acepta" value="1" /><label for="">Si</label>
+        <input type="checkbox" name="acepta" value="1" /><label for="">No</label>
+      </div>
 
-      </form>
-    </section>
-  
+      <input class="enviar" type="submit" value="Enviar">
+
+    </form>
+  </section>
+
   <footer>
     <h3>Marca</h3>
     <h3>Direccion</h3>

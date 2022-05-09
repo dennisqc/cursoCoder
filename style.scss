@@ -300,4 +300,39 @@ footer {
 .row label {
 
     color: black;
+    font-size: 16px;
 }
+.services{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-content: baseline;
+
+  gap: 30px;
+  grid-area: body;
+  justify-content: center;
+  padding-bottom: 30px;
+  padding: 50px 0px;
+}
+.card{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+
+
+}
+.size {
+  width: 300px !important;
+  height: 300px !important;
+  border: solid 1px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+.card-body{
+  width: 300px !important;
+  height: 300px !important;
+
+}
+
+

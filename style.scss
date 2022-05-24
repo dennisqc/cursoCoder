@@ -35,10 +35,12 @@
   flex-wrap: wrap;
   align-content: baseline;
 
-  gap: 30px;
+  gap: 70px;
   grid-area: body;
   justify-content: center;
   padding-bottom: 30px;
+  padding-right: 50PX ;
+  padding-left: 50PX ;
 }
 
 
@@ -61,7 +63,7 @@
 }
 
 h2 {
-  padding-top: 20px;
+  padding: 20px;
   text-align: center;
 }
 
@@ -76,10 +78,6 @@ h2 {
 
 .barra {
   grid-area: barra;
-}
-
-.oferta {
-  grid-area: oferta;
 }
 
 .oferta {
@@ -216,8 +214,15 @@ footer {
   color: #C7C7C7;
 }
 
+.oferta{
+  grid-area: oferta;
+}
 
 
+
+.catalogo-body{
+  grid-area: catalogo-body;
+}
 
 
 @media (max-width:800px) {
@@ -287,6 +292,13 @@ footer {
       "caja"
       "footer"
   }
+
+  .grid-catalogo {
+    grid-template:
+      "header"
+      "catalogo-body"
+      "footer"
+  }
 }
 
 /* contacto */
@@ -335,4 +347,7 @@ footer {
 
 }
 
+.row label {
+  margin-top: 0px;
 
+}

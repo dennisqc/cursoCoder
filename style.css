@@ -48,12 +48,14 @@
       flex-wrap: wrap;
   -ms-flex-line-pack: baseline;
       align-content: baseline;
-  gap: 30px;
+  gap: 70px;
   grid-area: body;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   padding-bottom: 30px;
+  padding-right: 50PX;
+  padding-left: 50PX;
 }
 
 .equipos img {
@@ -79,7 +81,7 @@
 }
 
 h2 {
-  padding-top: 20px;
+  padding: 20px;
   text-align: center;
 }
 
@@ -94,10 +96,6 @@ h2 {
 
 .barra {
   grid-area: barra;
-}
-
-.oferta {
-  grid-area: oferta;
 }
 
 .oferta {
@@ -229,6 +227,14 @@ footer {
   color: #C7C7C7;
 }
 
+.oferta {
+  grid-area: oferta;
+}
+
+.catalogo-body {
+  grid-area: catalogo-body;
+}
+
 @media (max-width: 800px) {
   .container-body {
     -ms-flex-wrap: wrap;
@@ -282,6 +288,9 @@ footer {
   }
   .grid-contacto {
     grid-template: "header" "caja" "footer";
+  }
+  .grid-catalogo {
+    grid-template: "header" "catalogo-body" "footer";
   }
 }
 
@@ -341,5 +350,9 @@ footer {
 .card-body {
   width: 300px !important;
   height: 300px !important;
+}
+
+.row label {
+  margin-top: 0px;
 }
 /*# sourceMappingURL=style.css.map */
